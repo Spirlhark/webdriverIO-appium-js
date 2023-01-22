@@ -71,7 +71,7 @@ describe('Add Notes', () => {
         await expect(EditNoteScreen.noteTitle).toHaveText(note);
 
         //failed assertion
-        // await expect(EditNoteScreen.noteTitle).toHaveText("error");
+        await expect(EditNoteScreen.noteTitle).toHaveText("error");
 
     });
 
