@@ -69,6 +69,10 @@ describe('Add Notes', () => {
         await expect($('//*[@text="Fav Anime List"]')).toBeDisplayed();
 
         await expect(EditNoteScreen.noteTitle).toHaveText(note);
+
+        //failed assertion
+        await expect(EditNoteScreen.noteTitle).toHaveText("error");
+
     });
 
     xit('skip tutorial bank', async () => {

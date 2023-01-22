@@ -1,1 +1,1 @@
-# webdriverIO-appium-js
+# webdriverIO-appium-js-allure

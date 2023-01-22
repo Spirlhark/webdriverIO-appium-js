@@ -66,8 +66,10 @@ describe('Add Notes', () => {
 
         //assertion
         await expect($('//*[@text="Fav Anime List"]')).toBeDisplayed();
-
         await expect($('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]')).toHaveText(note);
+
+        //failed assertion
+        await expect($('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]')).toHaveText('dsfsf');
     });
 
     xit('skip tutorial', async () => {

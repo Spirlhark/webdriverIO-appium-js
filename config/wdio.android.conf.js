@@ -6,6 +6,7 @@ const path = require('path');
 // Runner Configuration
 // ====================
 config.port = 4723;
+config.services = ['appium'],
 
 // ==================
 // Specify Test Files

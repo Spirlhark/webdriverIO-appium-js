@@ -23,12 +23,23 @@ config.specs = [
 // ============
 config.capabilities = [{
     'appium:platformName': 'ios',
-    'appium:platformVersion': '14.5',
-    // 'appium:platformVersion': '16.2',
-    'appium:deviceName': 'iPhone 12 Pro',
+    // 'appium:platformVersion': '14.5',
+    // 'appium:deviceName': 'iPhone 12 Pro',
+    'appium:platformVersion': '16.2',
+    'appium:deviceName': 'iPhone 14 Pro',
     'appium:automationName': 'XCUITest',
     // "appium:app": path.join(process.cwd(), './app/ios/UIKitCatalog.app.zip')
-    "appium:app": path.join(process.cwd(), './app/ios/MVCTodo.app.zip')
+    // "appium:app": path.join(process.cwd(), './app/ios/MVCTodo.app.zip')
+    "appium:app": path.join(process.cwd(), './app/ios/iOS-NativeDemoApp.app.zip')
 }];
+
+config.services = [['appium', {
+    args: {
+      address: 'localhost',
+      port: 4723,
+      relaxedSecurity: true
+    },
+    logPath: './'
+}]];
 
 exports.config = config;
